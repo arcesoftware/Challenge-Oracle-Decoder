@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="description" content="Encriptador de textos">
+    <meta name="author" content="Juan Arce @arcesoftware">
+    <meta name="theme-color" content="#0a3871">
+    <!-- Cambia el color de la barra de navegacion solo algunos navegadores la aceptan-->
+
+
+
+  <!-- HTML Meta Tags -->
+  <title>arcesoftware - Overview</title>
+  <meta name="description" content="Hi! I am a software developer and 3D artist living in Costa Rica
+ - arcesoftware">
+
+
+
+    <link rel="stylesheet" href="./css/normalize.css" type="text/css"> <!-- Estilos reset -->
+    <link rel="stylesheet" href="./css/styles.css" type="text/css"> <!-- Estilos propios -->
+</head>
+
+<body>
+    <!-- Encabezado -->
+    <div class="contenedor_todo">
+        <header class="encabezado">
+
+            <h1 class="encabezado__titulo">descifrador</h1>
+        </header>
+
+        <!-- Seccion de texto de ingreso -->
+
+        <section class="contenedor1 animacion_contenedor">
+            <textarea class="contenedor1_textoIngreso animacion_contenedor" name="texto" id="textarea" cols="30"
+                rows="10" placeholder="escriba el mensaje" autofocus></textarea>
+            <div class="informacion">
+                <img src="./img/Vector.svg" alt="signo de exclamacion" class="informacion__imagen">
+                <p class="informacion__parrafo">solo letras minusculas y sin acentos</p>
+            </div>
+            <div class="cont__btn">
+                <button class="btn btn_encriptar" id="encriptar">cifrar</button>
+                <button class="btn btn_desencriptar" id="desencriptar">descifrar</button>
+            </div>
+        </section>
+
+        <!-- seccion resultado -->
+
+        <section class="contenedor__resultado animacion_contenedor">
+            <textarea style="display:none;" class="contenedor__resultado__texto" name="texto" id="resultado" cols="30"
+                rows="10" placeholder="Escribe aquí tu texto"></textarea>
+            <div id="ocultar">
+                <img src="./img/Muñeco.webp" alt="Muneco buscando con lupa" class="ocultar__muneco">
+                <h2 class="ocultar__titulo">no se encontro el mensaje</h2>
+                <p class="ocultar__parrafo">ingrese el mensaje a cifrar o descifrar</p>
+            </div>
+            <div class="cont__btn__copiar">
+                <button class="btn btn_copiar" id="copiar" hidden>copiar</button>
+            </div>
+        </section>
+
+
+        <!-- Pie de pagina con redes sociales -->
+
+        <footer class="contenedor__redes">
+            <ul class="contenedor__redes__lista">
+ 
+                <li><a href="https://www.linkedin.com/in/juan-carlos-arce/" target="_blank" class="linkedin"><i
+                            class="fa fa-linkedin fa-fw"></i></a></li>
+                <li><a href="https://github.com/arcesoftware" target="_blank" class="github"><i><i
+                                class="fa fa-github fa-fw"></i></a></li>
+            </ul>
+            <p class="contenedor__redes__copy"> Costa Rica 2024 - Challenge Oracle Next One
+                <span> - Por Juan Carlos Arce </span></p>
+        </footer>
+    </div>
+</body>
+
+
+<!-- Iconos de las redes -->
+
+<script src="https://kit.fontawesome.com/b3310eed91.js" crossorigin="anonymous"></script>
+
+<!-- Funcionalidad de la pagina encriptador.html -->
+<script type="text/javascript" src="./js/funcionalidad.js"></script>
+
+</html>
